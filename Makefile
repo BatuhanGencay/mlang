@@ -1,7 +1,7 @@
 CXX = clang++
 CXXFLAGS = `llvm-config --cxxflags` -std=c++17
 LDFLAGS = `llvm-config --ldflags --system-libs --libs all`
-SRC = lexer.cpp parser.cpp ast.cpp generator.cpp main.cpp
+SRC = src/lexer.cpp src/parser.cpp src/ast.cpp src/generator.cpp src/main.cpp
 OUT = might
 
 all:
